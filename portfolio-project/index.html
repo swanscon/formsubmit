@@ -347,7 +347,10 @@
 
                             <!-- Disable Captcha -->
                             <input type="hidden" name="_captcha" value="false">
-                            
+
+                            <!-- Success Message Link -->
+                            <input type="hidden" name="_next" value="https://swanscon.github.io/formsubmit/portfolio-project/success.html">
+
                             <div class="input-control i-c-2">
                                 <input type="text" required placeholder="YOUR NAME" name="name">
                                 <input type="email" required placeholder="YOUR EMAIL" name="email">
@@ -356,7 +359,7 @@
                                 <input type="text" required placeholder="SUBJECT" name="subject">
                             </div>
                             <div class="input-control">
-                                <textarea cols="15" rows="8" placeholder="MESSAGE" name="message"></textarea>
+                                <textarea cols="15" rows="8" required placeholder="MESSAGE" name="message"></textarea>
                             </div>
                             <div class="submit-btn">
                                 <a href="javascript:{}" onclick="document.getElementById('my_form').submit();" class="main-btn">

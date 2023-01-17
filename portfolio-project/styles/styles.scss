@@ -737,5 +737,31 @@ section{
     opacity: 100%;
 }
 
+.success {
+    position: relative;
+    display: inline-block;
+}
+.success .successtext {
+    width: 110px;
+    background-color: inherit;
+    color: inherit;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-size: .9rem;
+    position: absolute;
+    left: 110%;
+    z-index: 1;
+    animation: fadeAnim .8s ease-in-out;
+    @keyframes fadeAnim {
+        0%{
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+        }
+    }
+}
+
 //Reset browser default
 @import './media'
